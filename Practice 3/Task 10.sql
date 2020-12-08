@@ -1,0 +1,1 @@
+SELECT *FROM EMP eWHERE e.SAL >= ALL (SELECT SAL                    FROM EMP                    WHERE DEPTNO = e.DEPTNO);

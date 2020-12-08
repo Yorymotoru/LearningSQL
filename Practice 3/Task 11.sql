@@ -1,0 +1,1 @@
+SELECT d.DEPTNOFROM DEPT dWHERE 3 >= (SELECT COUNT(e.EMPNO)            FROM EMP e            WHERE e.DEPTNO = d.DEPTNO);

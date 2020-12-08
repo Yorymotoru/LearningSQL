@@ -7,4 +7,4 @@ SELECT d.DIRECTOR_ID,
                 DEPART d
            WHERE d.DIRECTOR_ID = p.PERS_ID
        ) AS director_fio
-FROM depart d
+FROM depart d;
