@@ -1,0 +1,1 @@
+SELECT *FROM EMP eWHERE e.DEPTNO != (SELECT DEPTNO                   FROM EMP                   WHERE EMPNO = e.MGR);
