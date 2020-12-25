@@ -1,0 +1,3 @@
+DELETE PERS
+WHERE PERS_ID = (SELECT MAX(PERS_ID)
+                 FROM PERS)

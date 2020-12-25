@@ -1,0 +1,8 @@
+UPDATE PERS p
+SET (FIRSTNAME, MIDDLENAME) =
+        (SELECT p.FIRSTNAME || ' ' || d.DIRECTOR_ID,
+                p.MIDDLENAME || ' ' || d.DIRECTOR_ID
+         FROM DEPART d
+         WHERE d.DEPART_ID = p.DEPART_ID)
+WHERE PERS_ID > 106
+  AND SALARY > 1000
